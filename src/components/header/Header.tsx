@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import { makeStyles } from 'tss-react/mui';
 import { Link } from '@/components/link/Link';
 
