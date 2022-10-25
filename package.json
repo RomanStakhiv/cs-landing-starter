@@ -11,9 +11,9 @@
     "typescript"
   ],
   "scripts": {
-    "create-locale-files": "node createLocaleFiles.js --experimental-fetch",
+    "clf": "create-locale-files",
     "dev": "next",
-    "build": "next build && next export",
+    "build": "node createLocaleFiles.js --experimental-fetch && next build && next export",
     "start": "next start",
     "type-check": "tsc",
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
