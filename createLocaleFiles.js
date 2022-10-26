@@ -14,7 +14,7 @@ const createLocaleFiles = () => {
             fs.mkdirSync(`${dir}/${lng}`);
             fs.writeFileSync(
               `${dir}/${lng}/common.json`,
-              JSON.stringify(data.results),
+              JSON.stringify(data.results?.common ? data.results.common : {}),
             );
           });
           console.log(' ✅ Successfully created locale ====>', lng);

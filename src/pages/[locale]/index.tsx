@@ -7,8 +7,8 @@ const Home = () => {
 
   return (
     <MainLayout>
-      <h1>{t('common.More details')}</h1>
-      <h1>{t('common.Participate')}</h1>
+      <h1>{t('More details')}</h1>
+      <h1>{t('Participate')}</h1>
     </MainLayout>
   );
 };
