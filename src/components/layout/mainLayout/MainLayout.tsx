@@ -1,10 +1,11 @@
 import React, { FC } from 'react';
 import { makeStyles } from 'tss-react/mui';
-import { Header } from '@src/components/header/Header';
+import { Header } from '@cmp/header/Header';
 
-const useStyles = makeStyles()((theme) => ({
+const useStyles = makeStyles()(() => ({
   root: {
-    background: theme.palette.common.white,
+    height: '100vh',
+    width: '100%',
   },
 }));
 
