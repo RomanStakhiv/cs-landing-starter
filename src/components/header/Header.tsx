@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from '@mui/material';
 import { makeStyles } from 'tss-react/mui';
-import { Link } from '@/components/link/Link';
+import { LangSwitcher } from '@src/components/langSwitcher/LangSwitcher';
 
 const useStyles = makeStyles()((theme) => ({
   box: {
@@ -17,8 +17,7 @@ export const Header = () => {
 
   return (
     <Box className={classes.box}>
-      <Link href="https://google.com">About us</Link>
-      <Link href="https://google.com">Our goal</Link>
+      <LangSwitcher />
     </Box>
   );
 };

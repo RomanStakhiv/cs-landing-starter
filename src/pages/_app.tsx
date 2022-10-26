@@ -2,11 +2,11 @@ import type { AppProps } from 'next/app';
 import { appWithTranslation } from 'next-i18next';
 
 import { ThemeProvider } from '@mui/material';
-import theme from '@/theme/theme';
+import theme from '@src/theme/theme';
 import { CacheProvider } from '@emotion/react';
 import createCache from '@emotion/cache';
 
-import '@/styles/globals.scss';
+import '@src/styles/globals.scss';
 
 export const createMuiCache = () => createCache({ key: 'mui', prepend: true });
 

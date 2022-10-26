@@ -3,8 +3,17 @@ import NextLink, { LinkProps } from 'next/link';
 
 type Props = {
   children: ReactNode;
+  className?: string;
 };
 
-export const Link: FC<Props & LinkProps> = ({ children, ...props }) => {
-  return <NextLink {...props}>{children}</NextLink>;
+export const Link: FC<Props & LinkProps> = ({
+  children,
+  className,
+  ...props
+}) => {
+  return (
+    <NextLink className={className} {...props}>
+      {children}
+    </NextLink>
+  );
 };

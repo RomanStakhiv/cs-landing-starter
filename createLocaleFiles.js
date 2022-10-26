@@ -38,6 +38,7 @@ const createTranslationConfig = () => {
   i18n: {
     defaultLocale: 'en',
     locales: [${data.results.map(({ code }) => `'${code}'`)}],
+    fullLocalesData: ${JSON.stringify(data.results)},
   },
 };`,
           );

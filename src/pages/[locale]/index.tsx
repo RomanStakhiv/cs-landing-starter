@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next';
-import { getStaticPaths, makeStaticProps } from '@/lib/getStatic';
-import { MainLayout } from '@/components/layout/mainLayout/MainLayout';
+import { getStaticPaths, makeStaticProps } from '@src/lib/getStatic';
+import { MainLayout } from '@src/components/layout/mainLayout/MainLayout';
 
 const Home = () => {
   const { t } = useTranslation(['common']);

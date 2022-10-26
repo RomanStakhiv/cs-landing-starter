@@ -1,3 +1,3 @@
-import { Redirect } from '@/lib/redirect';
+import { Redirect } from '@src/lib/redirect';
 
 export default Redirect;
